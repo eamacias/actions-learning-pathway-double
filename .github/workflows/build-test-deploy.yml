@@ -11,6 +11,6 @@ on:
 
 jobs: 
   my-job:
-    uses: .github/workflows/build-test-deploy.yml@main
+    uses: eamacias/actions-learning-pathway/.github/workflows/build-test-deploy.yml@main
     with:
       node-version: '18.x'
