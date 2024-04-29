@@ -1,0 +1,16 @@
+name: build-test-deploy
+
+on: 
+    workflow_call:
+
+      inputs: 
+          node-version:
+              description: "Node version"
+              required: true
+              type: string
+
+jobs: 
+  my-job:
+    uses: .github/workflows/build-test-deploy.yml@main
+    with:
+      node-version: '18.x'
